@@ -23,6 +23,11 @@ function Admin() {
     croma:"",
     reliance:"",
     dell:"",
+    amazon_aff:"",
+    flipkart_aff:"",
+    reliance_aff:"",
+    dell_aff:"",
+    croma_aff:"",
   })
   
   const handleInputs=(e)=>{
@@ -185,6 +190,46 @@ function Admin() {
                                         <br />
                                         <div class="form-group">
                                             <input type="text"  id="dell" name="dell" class="form-control" placeholder="Dell" value={Data.dell} onChange={(e)=>{handleInputs(e)}} />
+                                        </div>
+                                        <h3>Affiliate Links</h3>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Amazon Affiliate *" 
+                                            value={Data.amazon_aff}
+                                            id="amazon_aff"
+                                            onChange={(e)=>{handleInputs(e)}} 
+                                            />
+                                        </div>
+                                        <br />
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Flipkart Affiliate *" 
+                                            value={Data.flipkart_aff}
+                                            id="flipkart_aff"
+                                            onChange={(e)=>{handleInputs(e)}} 
+                                            />
+                                        </div>
+                                        <br />
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Croma Affiliate *" 
+                                            value={Data.croma_aff}
+                                            id="croma_aff"
+                                            onChange={(e)=>{handleInputs(e)}} 
+                                            />
+                                        </div>
+                                        <br />
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="reliance Affiliate *" 
+                                            value={Data.reliance_aff}
+                                            id="reliance_aff"
+                                            onChange={(e)=>{handleInputs(e)}} 
+                                            />
+                                        </div>
+                                        <br />
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Croma Affiliate *" 
+                                            value={Data.croma_aff}
+                                            id="croma_aff"
+                                            onChange={(e)=>{handleInputs(e)}} 
+                                            />
                                         </div>
                                         <br />
                                         <input type="submit" class="btnRegister" onClick={(e)=>submit(e)}  value="Submit"/>
