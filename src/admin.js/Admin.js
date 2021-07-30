@@ -225,9 +225,9 @@ function Admin() {
                                         </div>
                                         <br />
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Croma Affiliate *" 
-                                            value={Data.croma_aff}
-                                            id="croma_aff"
+                                            <input type="text" class="form-control" placeholder="dell Affiliate *" 
+                                            value={Data.dell_aff}
+                                            id="dell_aff"
                                             onChange={(e)=>{handleInputs(e)}} 
                                             />
                                         </div>
