@@ -99,6 +99,7 @@ function Admin() {
                                          <br />
                                          <h6>Category</h6>
                                          <select class="form-select" aria-label="Default select example" value={Data.category} id="category" onChange={(e)=>{handleInputs(e)}} >
+                                          <option value="">Select Category</option>
                                            <option value="Books">Electronics</option>
                                            <option value="Mobiles and Computers">Mobiles and Computers</option>
                                            <option value="sports">Sports</option>
@@ -112,6 +113,7 @@ function Admin() {
                                          <br />
                                          <h6>Sub Category</h6>
                                          <select class="form-select" aria-label="Default select example" value={Data.subCategory} id="subCategory" onChange={(e)=>{handleInputs(e)}} >
+                                          <option value="">Select Sub-Category</option>
                                            <option value="Mobile Phones">Mobile Phones</option>
                                            <option value="Laptops">Laptops</option>
                                            <option value="Mouse">Mouse</option>
@@ -139,9 +141,11 @@ function Admin() {
                                         <br />
                                         <h6>Brand</h6>
                                          <select class="form-select" aria-label="Default select example" value={Data.brand} id="brand" onChange={(e)=>{handleInputs(e)}} >
+                                         <option value="">Select Brand</option>
                                            <option value="Nokia">Nokia</option>
                                            <option value="Apple">Apple</option>
                                            <option value="Redmi">Redmi</option>
+                                           <option value="Samsung">Samsung</option>
                                            <option value="Oppo">Oppo</option>
                                            <option value="Acer">Acer</option>
                                            <option value="Asus">Asus</option>
@@ -160,7 +164,7 @@ function Admin() {
                                          </select>
                                          <br />
                                         <div class="form-group">
-                                            <input type="text" minlength="10" maxlength="10" id="desc" name="Description" class="form-control" placeholder="Description" value={Data.desc} onChange={(e)=>{handleInputs(e)}} />
+                                            <input type="text" minlength="10" id="desc" name="Description" class="form-control" placeholder="Description" value={Data.desc} onChange={(e)=>{handleInputs(e)}} />
                                         </div>
                                         <br />
                                         <div class="form-group">
